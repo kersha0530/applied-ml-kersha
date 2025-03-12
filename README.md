@@ -1,4 +1,4 @@
-# applied-ml-template
+# applied-ml-kersha
 
 Start by copying this template repository into your GitHub account. Replace "template" with your name or alias, e.g. applied-ml-case.
 

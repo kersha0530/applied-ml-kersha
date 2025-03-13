@@ -1,105 +1,113 @@
-# ml-01
+# 📌 California Housing Price Prediction 🏠
 
-## Overview
-Businesses and organizations often need to understand the relationships between different factors to make better decisions.
-For example, a company may want to predict the fuel efficiency of a car based on its weight and engine size or estimate home prices based on square footage and location.
-Regression analysis helps identify and quantify these relationships between numerical features, providing insights that can be used for forecasting and decision-making.
 
-This project demonstrates your ability to apply regression modeling techniques to a real-world dataset. You will:
-- Load and explore a dataset.
-- Choose and justify features for predicting a target variable.
-- Train a regression model and evaluate performance.
-- Compare multiple regression approaches.
-- Document your work in a structured Jupyter Notebook.
+## **Project Overview**
 
-## Dataset 
-Housing Prices Dataset (Predict home values based on features like square footage and location)  
-- We use the built-in dataset from scikit-learn:  
-   - `from sklearn.datasets import fetch_california_housing`  
-- Additional dataset available on Kaggle:  
-   - [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)  
+This project focuses on predicting median house values in California using the California Housing dataset from Scikit-Learn. The goal is to analyze relationships between various housing features and price, build a regression model, and evaluate its performance.
 
-## Python Library for Machine Learning: scikit-learn
-We use scikit-learn, built on NumPy, SciPy, and matplotlib
-   - Read more at <https://scikit-learn.org/>
-   - Scikit-learn supports classification, regression, and clustering.
-   - This project applies regression.
+## **Dataset Information**
+- **Dataset:** California Housing Prices (Scikit-Learn)
+- **Features:**
+  - `MedInc` - Median income in block group
+  - `AveRooms` - Average number of rooms per household
+- **Target:** `MedHouseVal` - Median house price ($100,000s)
 
-**Important:** Use a 2-step installation to avoid timeouts and partial installs:  
-1. **First Install:** Install from `requirements.txt` with `scikit-learn` commented out.  
-2. **Second Install:** Uncomment `scikit-learn` and rerun the install command.
+## **Project Workflow**
+1. **Load Dataset** 📂
+2. **Exploratory Data Analysis (EDA)** 📊
+3. **Feature Selection** 🏗
+4. **Train ML Model (Linear Regression)** 🤖
+5. **Model Evaluation (R², MAE, RMSE)** 📉
+6. **Visualize Predictions** 📌
 
----
+## **Results**
+- **R² Score:** 0.46
+- **MAE:** 0.62
+- **MSE:** 0.84
+- **RMSE:** 0.91
 
-## Professional Python Setup and Workflow
-We follow professional Python practices. 
-Full instructions are available at <https://github.com/denisecase/pro-analytics-01/>. 
-A concise version is provided at [WORKFLOW_GUIDE.md](./docs/WORKFLOW_GUIDE.md)
+## **How to Run**
+1. Clone the repository
+   ```bash
+   git clone https://github.com/kersha0530/applied-ml-ahsrek
+#### Install dependencies:
+```bash
 
-**Important:** VS Code + Pylance may fail to recognize installed packages in Jupyter notebooks.  
-See the above guides for troubleshooting and solutions.  
+pip install -r requirements.txt
+```
 
----
+#### Run the Python script:
+```bash
 
-## Project Outline
-Machine learning projects follow a structured approach.
-We will use this approach throughout the course. 
+python ml01_housing.py
+```
 
-Start your notebook professionally with:
-- a single top-level title
-- your name (or alias)
-- the date
-- a brief introduction that describes the problem and the dataset.
-- Import the external Python libraries used (e.g., pandas, numpy, matplotlib, seaborn, sklearn, etc.)
 
-Present your work in clearly numbered second-level and third-level headings
 
-### Section 1. Load and Explore the Data
-- 1.1 Load the dataset and display the first 10 rows.
-- 1.2 Check for missing values and display summary statistics.
+### 📂  Dataset
 
-Analysis: What do you notice about the dataset? Are there any data issues?
+- The dataset includes housing statistics based on the 1990 California census. It contains the following columns:
 
-### Section 2. Visualize Feature Distributions
-- 2.1 Create histograms, boxplots, and scatterplots.
-- 2.2 Identify patterns or anomalies in feature distributions.
+- MedInc: Median income of households in a block group (in tens of thousands)
 
-Analysis: What patterns or anomalies do you see? Do any features stand out?
+- HouseAge: Median age of houses in the block group
 
-### Section 3. Feature Selection and Justification
-- 3.1 Choose two input features for predicting the target.
-- 3.2 Justify your selection with reasoning.
+- AveRooms: Average number of rooms per household
 
-Analysis: Why did you choose these features? How might they impact predictions?
+- AveBedrms: Average number of bedrooms per household
 
-### Section 4. Train a Linear Regression Model
-- 4.1 Define X (features) and y (target).
-- 4.2 Train a Linear Regression model using Scikit-Learn.
-- 4.3 Report R^2, MAE, RMSE.
+- Population: Total population of the block group
 
-Analysis: How well did the model perform? Any surprises in the results?
+- AveOccup: Average number of household members
 
-See [EXAMPLE_ANALYSIS](./docs/EXAMPLE_ANALYSIS.md) for more.
+- Latitude: Latitude of the block group’s location
 
----
+- Longitude: Longitude of the block group’s location
 
-## README.md (Required)
+- MedHouseVal: Median house value (Target Variable)
 
-Include a professional README.md. Include:
-- a personalized title
-- an introduction to your project
-- a clickable link to your notebook file.
-- Instructions on how to set up your virtual environment and run your notebook locally.
-   
-If starting with an assignment README, remove the parts you do not need to present your project.
----
+### 🛠 Installation & Setup
 
-## Repository Checklist
+1️⃣ Create a Virtual Environment
 
-Verify your repository contains:
+python -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate  # On Windows
 
-- [ ] Useful .gitignore (that keeps .venv out of GitHub)
-- [ ] Professional Jupyter Notebook with numbered sections   
-- [ ] Useful README.md
-- [ ] Useful requirements.txt
+2️⃣ Install Dependencies
 
+pip install -r requirements.txt
+
+3️⃣ Run Jupyter Notebook
+
+jupyter notebook
+
+### 🔍 Exploratory Data Analysis (EDA)
+
+#### Steps Performed:
+
+- 1. Load the dataset and check for missing values
+
+- 2. Generate summary statistics
+
+- 3. Visualize feature distributions (histograms, boxplots, scatterplots)
+
+- 4. Plot correlation heatmaps to identify relationships between variables
+
+### 🤖 Machine Learning Model: Linear Regression
+
+#### Steps:
+
+- 1. Define Features (X) and Target (y)
+
+- 2. Split dataset into training and testing sets
+
+- 3. Train a Linear Regression model using Scikit-Learn
+
+- 4. Evaluate the model using R², MAE, and RMSE
+
+### 📌 Repository
+
+### 🔗 GitHub Repository: https://github.com/kersha0530/applied-ml-kersha
+
+### 💡 Author: Kersha Broussard

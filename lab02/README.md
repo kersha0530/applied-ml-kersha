@@ -46,3 +46,5 @@ To run this project, install the required packages using:
 ```sh
 pip install -r requirements.txt
 
+📂 Repository: GitHub - applied-ml-kersha
+

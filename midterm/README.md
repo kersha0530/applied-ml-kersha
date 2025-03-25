@@ -4,6 +4,31 @@
 **Date**: 3/25/2025
 **Course**: Applied Machine Learning  
 
+**Imports**
+# Core Libraries
+import pandas as pd
+import numpy as np
+
+# Visualization
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Preprocessing
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.model_selection import train_test_split
+
+# Models
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+
+# Evaluation
+from sklearn.metrics import (
+    classification_report,
+    confusion_matrix,
+    accuracy_score
+)
+
+
 ## 📘 Project Overview
 
 This project demonstrates how classification models can be applied to predict whether a mushroom is edible or poisonous based on 22 categorical features. The dataset comes from the UCI Machine Learning Repository.
@@ -37,8 +62,8 @@ This project demonstrates how classification models can be applied to predict wh
    jupyter notebook
 
    🔗 Links
-📓 View My Notebook
+📓 View My Notebook https://github.com/kersha0530/applied-ml-kersha/blob/main/midterm/classification_kbroussard.ipynb 
 
-📝 View My Peer Review
+📝 View My Peer Review https://github.com/kersha0530/applied-ml-kersha/blob/main/midterm/peer_review.md 
 
 
